@@ -58,7 +58,7 @@ services:
     environment: 
       # Connects to MongoDB Atlas instead of a local MongoDB instance
       # Ensure this URL is kept secure and not exposed in version control
-      DB_URL: "mongodb+srv://prathameshsbpb:DgJtg7QIvvuIysfO@book-store.zphte81.mongodb.net/book-store?retryWrites=true&w=majority"
+      DB_URL: "mongodb+srv://prathameshsbpb:DgJtg7QIvvuIysfO@intuit-craft-demo.ogykvta.mongodb.net/?retryWrites=true&w=majority"
     
     # establish docker compose watch mode for the api service
     develop:

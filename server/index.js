@@ -10,7 +10,7 @@ app.use(cors());
 /** Env Variables */
 const PORT = 3000;
 const mongoDBURL =
-  "mongodb+srv://prathameshsbpb:DgJtg7QIvvuIysfO@book-store.zphte81.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://prathameshsbpb:DgJtg7QIvvuIysfO@intuit-craft-demo.ogykvta.mongodb.net/?retryWrites=true&w=majority";
 
 app.use(express.json());
 
