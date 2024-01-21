@@ -18,13 +18,12 @@ function BookList() {
     }
 
     return (
-        <div className="container">
+        <div className="mt-6">
             <h2>Book List</h2>
-            <ul className="book-list">
+            <ul className="space-y-4">
                 {books.map(book => (
-                    <li key={book._id} className="book-item">
-                        <span className="book-title">{book.title}</span>
-                        {/* Add the DeleteBook component here */}
+                    <li key={book._id} className="bg-gray-800 p-6 rounded-lg shadow-lg flex justify-between items-center transform hover:translate-y-1 hover:shadow-2xl transition duration-200">
+                        <span className="text-xl text-gray-300">{book.title}</span>
                         <DeleteBook bookId={book._id} />
                     </li>
                 ))}

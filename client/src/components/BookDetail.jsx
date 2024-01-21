@@ -20,15 +20,13 @@ function BookDetail() {
   }
 
   return (
-     <div className="container">
-            <div className="book-detail">
-                <h2>Book Detail</h2>
-                <p className="book-info">Title: {book.title}</p>
-                <p className="book-info">Author: {book.author}</p>
-                <p className="book-info">Publish Year: {book.publishYear}</p>
-                {/* Add Edit and Delete buttons here */}
-            </div>
-        </div>
+    <div className="bg-gray-700 p-6 rounded-lg shadow-lg my-6">
+      <h2 className="text-xl mb-4 text-blue-300">Book Detail</h2>
+      <p className="text-white mb-2">Title: {book.title}</p>
+      <p className="text-white mb-2">Author: {book.author}</p>
+      <p className="text-white">Publish Year: {book.publishYear}</p>
+      {/* Add Edit and Delete buttons here */}
+    </div>
   );
 }
 

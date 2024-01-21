@@ -36,11 +36,53 @@ function EditBookForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>Edit Book</h2>
-      {/* ... form fields similar to AddBookForm ... */}
-    </form>
-  );
+        <div className="container mx-auto my-6">
+            {banner.show && (
+                <Banner
+                    message={banner.message}
+                    type={banner.type}
+                    onClose={closeBanner}
+                />
+            )}
+            <form onSubmit={handleSubmit} className="bg-gray-700 p-6 rounded-lg shadow-lg">
+                <h2 className="text-2xl text-blue-300 mb-6">Edit Book</h2>
+                <div className="mb-4">
+                    <label className="block text-white mb-2">Title:</label>
+                    <input
+                        type="text"
+                        name="title"
+                        value={book.title}
+                        onChange={handleChange}
+                        className="w-full p-2 bg-gray-800 text-white border border-blue-500 rounded"
+                        required
+                    />
+                </div>
+                <div className="mb-4">
+                    <label className="block text-white mb-2">Author:</label>
+                    <input
+                        type="text"
+                        name="author"
+                        value={book.author}
+                        onChange={handleChange}
+                        className="w-full p-2 bg-gray-800 text-white border border-blue-500 rounded"
+                        required
+                    />
+                </div>
+                <div className="mb-4">
+                    <label className="block text-white mb-2">Publish Year:</label>
+                    <input
+                        type="number"
+                        name="publishYear"
+                        value={book.publishYear}
+                        onChange={handleChange}
+                        className="w-full p-2 bg-gray-800 text-white border border-blue-500 rounded"
+                        required
+                    />
+                </div>
+                <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Update Book</button>
+            </form>
+        </div>
+    );
 }
 
 export default EditBookForm;

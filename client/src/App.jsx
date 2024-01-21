@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import BookList from './components/BookList';
 import BookDetail from './components/BookDetail';
@@ -12,7 +12,7 @@ function App() {
     <div>
       <Navbar/>
       <Router>
-        <div>
+        <div className="container mx-auto px-4">
           {/* The <Routes> component renders the first <Route> that matches the URL. */}
           <Routes>
             <Route path="/add-book" element={<AddBookForm />} />

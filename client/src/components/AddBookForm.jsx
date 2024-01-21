@@ -40,7 +40,7 @@ function AddBookForm() {
     };
 
     return (
-        <div className="container">
+        <div className="container mx-auto my-6">
             {banner.show && (
                 <Banner
                     message={banner.message}
@@ -48,42 +48,42 @@ function AddBookForm() {
                     onClose={closeBanner}
                 />
             )}
-            <form onSubmit={handleSubmit} className="book-form">
-                <h2>Add a Book</h2>
-                <div className="form-group">
-                    <label className="label">Title:</label>
+            <form onSubmit={handleSubmit} className="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h2 className="text-xl text-gray-200 mb-4">Add a Book</h2>
+                <div className="mb-4">
+                    <label className="block text-white mb-2">Title:</label>
                     <input
                         type="text"
                         name="title"
                         value={book.title}
                         onChange={handleChange}
-                        className="input"
+                        className="w-full p-2 bg-gray-800 text-white border border-blue-500 rounded"
                         required
                     />
                 </div>
-                <div className="form-group">
-                    <label className="label">Author:</label>
+                <div className="mb-4">
+                    <label className="block text-white mb-2">Author:</label>
                     <input
                         type="text"
                         name="author"
                         value={book.author}
                         onChange={handleChange}
-                        className="input"
+                        className="w-full p-2 bg-gray-800 text-white border border-blue-500 rounded"
                         required
                     />
                 </div>
-                <div className="form-group">
-                    <label className="label">Publish Year:</label>
+                <div className="mb-4">
+                    <label className="block text-white mb-2">Publish Year:</label>
                     <input
                         type="number"
                         name="publishYear"
                         value={book.publishYear}
                         onChange={handleChange}
-                        className="input"
+                        className="w-full p-2 bg-gray-800 text-white border border-blue-500 rounded"
                         required
                     />
                 </div>
-                <button type="submit">Add Book</button>
+                <button type="submit" className="bg-blue-700 hover:bg-blue-800 text-white font-normal py-2 px-4 rounded">Add Book</button>
             </form>
         </div>
     );
