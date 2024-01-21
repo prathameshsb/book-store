@@ -1,0 +1,227 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #2c2c2c;
+  /* Dark background */
+  color: #FAFAFA;
+  /* Light text for dark mode */
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Navbar.css */
+.navbar {
+  background-color: #424242;
+  /* Dark background for navbar */
+  padding: 15px 20px;
+  width: 100%;
+  /* Set width to 70% */
+  margin: 0 auto;
+  /* Center the navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-radius: 5px;
+  /* Optional: Adds rounded corners */
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items li:last-child {
+  margin-right: 0;
+}
+
+.nav-items a {
+  color: #FAFAFA;
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.nav-items a:hover {
+  color: #a6b1e1;
+  /* Muted blue for hover */
+}
+
+/* BookList.css */
+.book-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.book-item {
+  background: #333;
+  /* Dark background for book items */
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.book-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-title {
+  font-size: 20px;
+  margin: 0;
+  color: #a6b1e1;
+  /* Muted blue for book titles */
+}
+
+/* BookDetail.css */
+.book-detail {
+  background: #333;
+  /* Dark background for book detail */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  color: #FFF;
+  /* Light text for dark mode */
+}
+
+.book-info {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/* BookForm.css */
+.book-form {
+  background: #333;
+  /* Dark background for forms */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  color: #FFF;
+  /* Light text for dark mode */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #424242;
+  /* Dark background for inputs */
+  color: #FFF;
+  /* Light text for dark mode */
+  border: 1px solid #5c6bc0;
+  /* Border color */
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3949ab;
+  /* Border color on focus */
+}
+
+/* Button Styles */
+.add-button {
+  background-color: #a6b1e1;
+  /* Muted blue for add button */
+}
+
+.add-button:hover {
+  background-color: #8e99c4;
+  /* Darker shade on hover */
+}
+
+.delete-button {
+  background-color: #f78888;
+  /* Pastel muted red for delete button */
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #f35555;
+  /* Darker shade on hover */
+}
+
+/* Banner.css */
+.banner {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.banner.success {
+  background-color: #a6b1e1;
+  /* Muted blue for success */
+}
+
+.banner.error {
+  background-color: #f78888;
+  /* Pastel muted red for error */
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
