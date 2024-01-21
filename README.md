@@ -35,10 +35,6 @@ To contribute to <book-store>, follow these steps:
 4. Push to the original branch: `git push origin <book-store>/<location>`
 5. Create the pull request.
 
-## Contact
-
-If you want to contact me you can reach me at <prathameshsb.pb@gmail.com>.
-
 ## License
 
-This project uses the following license: [<license_name>](link_to_license).
+This project uses the following license: [prathameshsb].
